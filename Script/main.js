@@ -6,4 +6,8 @@ function FirstCard(){
     
     
 }
-
+function ContrateFunction(){
+    setTimeout(function(){
+        window.location.href = "google.com"
+        }, 300);
+}
