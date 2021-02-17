@@ -106,13 +106,14 @@ body{
       letter-spacing: 0.1em;
       cursor: pointer;
       font-size: 14px;
+      color: black;
       font-weight: 400;
       line-height: 45px;
       position: relative;
       text-decoration: none;
       text-transform: uppercase;
       height: 50px;
-      background-color: rgb(216, 216, 216);
+      background-color: rgb(255, 255, 255);
       min-width: 150px;
       display: flex;
       align-items: center;

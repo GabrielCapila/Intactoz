@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 function ContrateFunction(){
   setTimeout(function(){
-    window.location.href = "https://google.com/contact"
+    window.location.href = "http://franciscosantos.net/loja"
       console.log('ok')
       }, 300);
 }
@@ -21,16 +21,40 @@ const Main = styled.div`
     font-family: 'Open Sans', sans-serif;
 `
 const Text = styled.div`
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
   color: white;
   letter-spacing: px;
-  font-size: 70px;
+  font-size: 100px;
   display: flex;
+  font-family: 'Poppins', sans-serif;
   flex-direction: row;
   justify-content: space-around;
+  animation: neon .08s ease-in-out infinite alternate;
+  @keyframes neon {
+  from {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+  }
+  to {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(30,132,242,0.58),
+    0 0 22px rgba(30,132,242,0.84),
+    0 0 38px rgba(30,132,242,0.88),
+    0 0 60px rgba(30,132,242,1);
+  }
+}
   .notColored{
     margin-left:25px;
     display:flex;
   }
+
 `
 const Buttons = styled.div`
     margin-top: 5rem;
@@ -75,19 +99,28 @@ const LinkStyled = styled(Link)`
 const Btn = styled.span`
 letter-spacing: 0.1em;
       cursor: pointer;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 400;
       line-height: 45px;
+      color: white;
       position: relative;
       text-decoration: none;
       text-transform: uppercase;
       height: 50px;
-      background-color: rgb(216, 216, 216);
+      background-color:transparent;
       min-width: 150px;
       display: flex;
       align-items: center;
       justify-content: center;
-    box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
+      border-radius: 25px;
+      border: 2px solid white;
+       :hover{
+        background-color: white;
+        color: black;
+        transition: 0.3s;
+        border: 2px solid black;
+
+      }
     `
 
 function Home() {
