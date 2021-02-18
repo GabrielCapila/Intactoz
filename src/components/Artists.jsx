@@ -21,16 +21,6 @@ box-shadow: 0px 0px 20px 0px rgb(255, 255, 255);
 border-radius: 5px;
 `
 
-const Disc = styled.div`
-justify-content: flex-start;
-display: flex;
-align-items: center;
-width: 90vw;
-padding-top: 3rem;
-padding-bottom: 3rem;
-box-shadow: 0px 0px 20px 0px rgb(255, 255, 255);
-border-radius: 5px;
-`
 const Photo = styled.div`
         
         padding: 5rem;
@@ -55,7 +45,7 @@ align-items: center;
 
 const Text = styled.span`
     word-wrap: break-word;
-    text-aling: right;
+    text-align: right;
     font-size: 1.5rem
 `
 
@@ -100,11 +90,7 @@ function Artists(){
                         </TextArea>
                     </Bio>
                 </Main>
-                <Main>
-                <Disc>
                 
-                </Disc>
-                </Main>
 
         </div>
     )

@@ -22,34 +22,17 @@ const Main = styled.div`
 `
 const Text = styled.div`
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-  color: white;
+  color: #000000;
   letter-spacing: px;
-  font-size: 100px;
+  font-size: 120px;
   display: flex;
   font-family: 'Poppins', sans-serif;
   flex-direction: row;
   justify-content: space-around;
-  animation: neon .08s ease-in-out infinite alternate;
-  @keyframes neon {
-  from {
-    text-shadow:
-    0 0 6px rgba(202,228,225,0.92),
-    0 0 30px rgba(202,228,225,0.34),
-    0 0 12px rgba(30,132,242,0.52),
-    0 0 21px rgba(30,132,242,0.92),
-    0 0 34px rgba(30,132,242,0.78),
-    0 0 54px rgba(30,132,242,0.92);
-  }
-  to {
-    text-shadow:
-    0 0 6px rgba(202,228,225,0.98),
-    0 0 30px rgba(202,228,225,0.42),
-    0 0 12px rgba(30,132,242,0.58),
-    0 0 22px rgba(30,132,242,0.84),
-    0 0 38px rgba(30,132,242,0.88),
-    0 0 60px rgba(30,132,242,1);
-  }
-}
+ text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px rgb(255, 255, 255);
   .notColored{
     margin-left:25px;
     display:flex;
@@ -62,6 +45,7 @@ const Buttons = styled.div`
     justify-content: space-around;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
+    
 
     
 `
